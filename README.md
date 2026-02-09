@@ -1,5 +1,23 @@
-# Reconhededor_de_bandeiras.IO
-Repositório criado, para armazenar o codigo e documentação de algoritmo para identificação de bandeiras de cartão de credito.
-Documentação Técnica: Validador de Bandeiras de Cartão1. Visão GeralEste módulo tem como objetivo a identificação automática da bandeira de cartões de crédito através da análise do IIN (Issuer Identification Number) — os primeiros dígitos do cartão. O sistema processa a entrada, limpa caracteres indesejados e aplica padrões lógicos para determinar a qual rede o cartão pertence.2. O que foi feito (Escopo)Foi desenvolvido um algoritmo capaz de identificar 10 bandeiras distintas, cobrindo tanto o mercado global quanto o nacional (Brasil).O fluxo de processamento segue três etapas de Pensamento Computacional:Sanitização: Remoção de espaços e caracteres especiais (ex: 1234.5678 torna-se 12345678).Mapeamento de Padrões: Uso de Expressões Regulares (Regex) para validar o prefixo e o comprimento total.Identificação: Retorno do nome amigável da bandeira ou status de erro.3. Bandeiras SuportadasBandeiraRegra de Identificação (Resumo)VisaComeça com 4 e possui 16 dígitos.MasterCardFaixas 51-55 ou 2221-2720.AmexComeça com 34 ou 37; 15 dígitos.DinersPrefixos 300-305, 36 ou 38.Hipercard / AuraFoco em faixas específicas de mercado nacional (Brasil).OutrasDiscover, enRoute, JCB e Voyager.4. Tecnologias UtilizadasC# (.NET): Linguagem de programação principal, escolhida pela robustez e forte tipagem.System.Text.RegularExpressions: Engine de Regex de alta performance para validação de padrões complexos.GitHub: Utilizado para versionamento de código e documentação.Lógica de Algoritmos: Implementação de busca em dicionários para garantir que o código seja escalável (fácil de adicionar novas bandeiras).5. Para que serve?User Experience (UX): No e-commerce, permite trocar o ícone do cartão em tempo real enquanto o usuário digita.Segurança e Prevenção: Bloqueia bandeiras que o estabelecimento não aceita antes mesmo de processar o pagamento.Otimização de Checkout: Reduz erros de preenchimento e aumenta a conversão de vendas.6. Como utilizarC#var validator = new CardValidator();
-string resultado = validator.IdentifyBrand("4002 8922 1234 5678");
-Console.WriteLine($"A bandeira detectada é: {resultado}"); // Saída: Visa
+# 💳 Card Brand Identifier - .NET
+
+Algoritmo de alta performance desenvolvido em C# para identificação instantânea de bandeiras de cartão de crédito.
+
+## 🚀 Funcionalidades
+- Identificação de 10 bandeiras (Nacionais e Internacionais).
+- Limpeza automática de caracteres (aceita números com espaços, pontos ou traços).
+- Implementação utilizando **Top-Level Statements** (.NET 6/7/8).
+
+## 🛠️ Tecnologias
+- **Linguagem:** C#
+- **Framework:** .NET 8.0
+- **Motor de Busca:** Regular Expressions (Regex)
+
+## 📋 Bandeiras Suportadas
+Visa (16 dígitos), MasterCard, Amex, Diners, Discover, enRoute, JCB, Voyager, HiperCard e Aura.
+
+## ⚙️ Como executar
+1. Certifique-se de ter o SDK do .NET instalado.
+2. Clone o repositório.
+3. No terminal, execute:
+   ```bash
+   dotnet run
