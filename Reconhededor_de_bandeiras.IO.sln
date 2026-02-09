@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reconhededor_de_bandeiras.IO", "Reconhededor_de_bandeiras.IO.csproj", "{DE25CC14-EA09-FD49-8277-84C9071B73A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE25CC14-EA09-FD49-8277-84C9071B73A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE25CC14-EA09-FD49-8277-84C9071B73A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE25CC14-EA09-FD49-8277-84C9071B73A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE25CC14-EA09-FD49-8277-84C9071B73A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FB2CF83-6D65-4B7F-9442-CA551F3475DB}
+	EndGlobalSection
+EndGlobal
