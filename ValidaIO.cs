@@ -1,18 +1,14 @@
 ﻿using System.Text.RegularExpressions;
 
-// 1. Entrada de dados
 Console.WriteLine("--- Validador de Bandeiras Jarvs ---");
 Console.Write("Digite o número do cartão: ");
 string input = Console.ReadLine() ?? "";
 
-// 2. Execução da Lógica
 string bandeira = CardValidator.IdentifyBrand(input);
 
-// 3. Output
 Console.WriteLine($"\nResultado: {bandeira}");
 Console.WriteLine("------------------------------------");
 
-// Classe de suporte (pode ficar no mesmo arquivo ou em um CardValidator.cs)
 public static class CardValidator
 {
     private static readonly Dictionary<string, string> BrandRules = new()
